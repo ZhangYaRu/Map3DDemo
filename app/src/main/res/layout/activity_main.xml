@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请输入起点"
+                android:maxLines="1"
+                android:onClick="inputStart" />
+
+            <TextView
+                android:id="@+id/tv_end"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请输入终点"
+                android:maxLines="1"
+                android:onClick="inputEnd" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:onClick="exchange"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="交换" />
+    </LinearLayout>
+
+    <Button
+        android:onClick="search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="搜索"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
